@@ -1,0 +1,129 @@
+﻿Benchmark Validation File - DO NOT MODIFY! If you do, it will fail validation.
+
+Validation Version:    1.3
+
+Program:               y-cruncher v0.7.8 Build 9507
+Tuning:                17-ZN1 ~ Yukina
+
+User:                  None Specified - You can edit this in "Username.txt".
+
+Operating System:      Windows 10.0 Build 19041
+
+Processor(s):
+    Name:              AMD Ryzen 5 1500X Quad-Core Processor 
+    Logical Cores:     8
+    Physical Cores:    4
+    Sockets:           1
+    NUMA Nodes:        1
+    Base Frequency:    3,493,576,800 Hz
+
+Motherboard:
+    Manufacturer:      Gigabyte Technology Co., Ltd.
+    Model:             AB350N-Gaming WIFI-CF
+    Version:           x.x
+    Serial Number:     Suppressed - Personally identifiable information is opt-in only.
+
+Memory:
+    Usable Memory:     8,539,197,440 (7.95 GiB)
+    Total Memory:      8,589,934,592 (8.00 GiB)
+    DIMM:              8.00 GiB - Kingston - KHX2133C14/8G       
+
+Constant:              Pi
+Algorithm:             Chudnovsky (1988)
+Decimal Digits:        25,000,000
+Hexadecimal Digits:    Disabled
+Computation Mode:      Ram Only
+Threading Mode:        Push Pool  ->  8 / ?  (randomization on)
+Working Memory:        205,411,072 ( 196 MiB)
+Total Memory:          337,956,864 ( 322 MiB)
+
+Configuration Dump:
+{
+    Constant : {
+        Constant : "pi"
+        Algorithm : "chudnovsky"
+    }
+    ComputeSize : {
+        DecimalDigits : 25000000
+        EnableHexDigits : "false"
+    }
+    Output : {
+        Path : ""
+        OutputEnable : "true"
+        DigitsPerFile : 0
+    }
+    OutputVerify : "false"
+    Mode : "ram"
+    Parallelism : {
+        TaskDecomposition : 8
+        Framework : "pushpool"
+        WorkerThreads : 0
+        Randomization : "true"
+        MaxSequentialDispatch : 64
+    }
+    Allocator : {
+        Allocator : "mmap"
+        LargePages : "attempt"
+        LockedPages : "attempt"
+    }
+}
+
+Start Date:            Mon Aug  2 00:25:43 2021
+End Date:              Mon Aug  2 00:25:46 2021
+
+Total Computation Time:    2.730 seconds
+Start-to-End Wall Time:    3.018 seconds
+
+CPU Utilization:           651.43 %  +  1.72 % kernel overhead
+Multi-core Efficiency:     81.43 %  +  0.21 % kernel overhead
+
+Last Decimal Digits:
+3803750790 9491563108 2381689226 7224175329 0045253446  :  24,999,950
+0786411592 4597806944 2455112852 2554677483 6191884322  :  25,000,000
+
+SHA256-dec(25,000,001 - 25,000,100): 4abe7f52d10ed8dc765fef00f5d12642731b99bc8394080ead80b4e38d477fa8
+
+Dec Counts: {2500496,2499915,2500707,2499313,2502826,2500139,2499603,2498290,2499189,2499522}
+
+Dec Hash: Floor(|x| * 10^dec) mod (2^61 - 1) = 1692187194272191174
+
+Spot Check:                 Good through 25,000,000
+Timer Sanity Check:         Passed
+Frequency Sanity Check:     Disabled in this version of y-cruncher
+Reference Clock:            
+Reference Clock 0:          10,000,000
+Reference Clock 1:          97,892,276
+Reference Clock 2:          1,699,237
+Is Debugger Present:        No
+Is Contiguous:              Yes
+ECC Recovered Errors:       0
+Colors:                     Yes
+
+Event Log:
+Mon Aug  2 00:25:43 2021	0.012	Working Memory
+Mon Aug  2 00:25:43 2021	0.076	Working Memory:  198 MiB  (locked, 2.00 MiB pages, spread: 100%/1)
+Mon Aug  2 00:25:43 2021	0.076	Twiddle Tables
+Mon Aug  2 00:25:43 2021	0.167	Twiddle Tables:  128 MiB  (locked, 2.00 MiB pages, spread: 100%/1)
+Mon Aug  2 00:25:43 2021	0.169	Begin Computation
+Mon Aug  2 00:25:43 2021	0.170	Series CommonP2B3...  1,762,854 terms  (Expansion Factor = 2.360)
+Mon Aug  2 00:25:43 2021	0.170	Series: A ( 8 ) 0.000%
+Mon Aug  2 00:25:43 2021	0.196	Series: A ( 7 ) 1.736%
+Mon Aug  2 00:25:44 2021	0.297	Series: A ( 6 ) 6.893%
+Mon Aug  2 00:25:44 2021	0.412	Series: E ( 5 ) 12.061%
+Mon Aug  2 00:25:44 2021	0.521	Series: E ( 4 ) 17.241%
+Mon Aug  2 00:25:44 2021	0.686	Series: E ( 3 ) 24.333%
+Mon Aug  2 00:25:44 2021	0.928	Series: E ( 2 ) 34.387%
+Mon Aug  2 00:25:45 2021	1.253	Series: E ( 1 ) 48.698%
+Mon Aug  2 00:25:45 2021	1.704	Series: E ( 0 ) 69.250%
+Mon Aug  2 00:25:46 2021	2.343	Finishing Series
+Mon Aug  2 00:25:46 2021	2.352	Large Division
+Mon Aug  2 00:25:46 2021	2.495	InvSqrt(10005)...
+Mon Aug  2 00:25:46 2021	2.600	Large Multiply
+Mon Aug  2 00:25:46 2021	2.681	Base Converting
+Mon Aug  2 00:25:46 2021	2.901	Writing Decimal Digits
+Mon Aug  2 00:25:46 2021	3.017	End Computation
+
+----
+
+Checksum0: e284a7f691fa020e3ed03cd03d4cdc36fba43ff8d7a3e20a17c25227be4e8ecb0f6ae2eb5d956c3669956f677ce85b2644919e7627bf82cf9d5fe349feae647f
+Checksum1: ad879b43b8d79bc3254aeb31dc496dcacfb98e9264549878011432f7598d73c51b037f5b5f2714543aead52df7a104c70ac48762d6905e1b32c85869ec3d98f7
